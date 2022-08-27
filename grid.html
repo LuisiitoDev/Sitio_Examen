@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"> </script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"> </script>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.utc.ac.cr/web_i/">UTC</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Portada <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./formularioRegistro.html">Formulario de Registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./ListaNotas.html">Lista de Notas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./grid.html">Pagina Grid de informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contactenos.html">Contactenos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container cab">
+        <header>
+            <h1>Mejores Equipos Europeos</h1>
+        </header>
+    </div>
+
+    <div class="container">
+
+
+
+        <!--<div class="container">-->
+        <div class="row ej1">
+            <!-- ejemplo 12 elementos: xs-4 módulos sm-3 md-2 lg-1-->
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="https://assets.manutd.com/AssetPicker/images/0/0/11/201/772402/Manchester_United_Crest_Comp_180x1801550591475296.png" alt="" />
+                    <h2>Manchester United</h2>
+                    <p><a href="https://www.manutd.com/es">&gt; Más información</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="https://www.liverpoolfc.com/liverpoolfc_crest.png" alt="" />
+                    <h2>Liverpool</h2>
+                    <p><a href="https://www.liverpoolfc.com/">&gt; Más información</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="https://www.arsenal.com/themes/custom/arsenal_main/logo.svg" alt="" />
+                    <h2>Arsenal</h2>
+                    <p><a href="https://www.arsenal.com/live#!timeline">&gt; Más información</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2My41IDE1NC43IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2My41IDE1NC43OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNNy44LDExNi41Yy0wLjMtMC4xLTAuOS0wLjEtMS42LDAuNmMtMSwxLjEtMS41LDIuNS0xLjQsNC4zYzAsMC41LDAuMSwwLjcsMC4yLDEuMWMwLjIsMC42LDAuOCwxLjEsMS4yLDEuMQ0KCQljMC41LDAuMSwxLTAuMiwxLjUtMC44YzEuMS0xLjMsMS42LTMuNywxLjEtNS4yQzguNiwxMTcsOC4yLDExNi42LDcuOCwxMTYuNSIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNmZmZmZmYiIGQ9Ik0zMS40LDEzNC4xYzAuNiwxLjIsMS41LDEuOSwyLjMsMi4xYzAuOSwwLjMsMy41LDAuOCw1LjUsMS4xYzIuMywwLjIsNC4xLTEsNS4xLTMuNWMtMC44LDAtMS42LTAuMS0yLjQtMC4yDQoJCWMtMC4yLDAuNS0wLjQsMS0wLjYsMS41Yy0wLjIsMC4zLTAuNiwwLjUtMSwwLjNjLTAuMy0wLjItMC41LTAuNi0wLjMtMWMwLjItMC4zLDAuMy0wLjYsMC40LTFjLTAuNC0wLjEtMC45LTAuMi0xLjMtMC4yDQoJCWMtMC4yLDAuNi0wLjMsMS4xLTAuNSwxLjZjLTAuMiwwLjQtMC42LDAuNS0wLjksMC40Yy0wLjQtMC4yLTAuNS0wLjYtMC40LTAuOWMwLjEtMC4zLDAuMy0wLjgsMC40LTEuM2MtMC4yLDAtMC41LTAuMS0wLjctMC4yDQoJCWMtMC4yLTAuMS0wLjUtMC4xLTAuNy0wLjJjLTAuMSwwLjQtMC4zLDAuOC0wLjUsMS4zYy0wLjIsMC40LTAuNiwwLjUtMC45LDAuNGMtMC40LTAuMi0wLjUtMC42LTAuNC0wLjljMC4yLTAuNCwwLjMtMC43LDAuNC0xLjENCgkJYy0xLjItMC4zLTIuNS0wLjYtMy43LTFDMzAuOSwxMzIuNCwzMS4xLDEzMy40LDMxLjQsMTM0LjEiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNNDQuOCwxMzIuNGMwLjMtMS40LDAtMi40LTAuNC0zYy0wLjQtMC44LTEuMi0xLjMtMi0xLjVsLTAuOS0wLjJjLTAuOC0wLjItMi4xLTAuNC00LTAuOQ0KCQljLTIuNS0wLjYtNC43LDAuNS01LjksM2MxLjIsMC4zLDIuNCwwLjcsMy42LDFjMC4yLTAuOSwwLjItMS41LDAuMi0xLjVjMC0wLjQsMC40LTAuNywwLjgtMC43YzAuNCwwLDAuNywwLjQsMC43LDAuNw0KCQljMCwwLjEsMCwwLjgtMC4zLDEuOGMwLjIsMC4xLDAuNSwwLjEsMC43LDAuMmMwLjIsMC4xLDAuNSwwLjEsMC43LDAuMmMwLjItMSwwLjMtMS44LDAuMy0xLjljMC4xLTAuNCwwLjQtMC43LDAuOC0wLjYNCgkJYzAuNCwwLjEsMC43LDAuNCwwLjYsMC44YzAsMC4xLTAuMSwwLjktMC40LDEuOWMwLjUsMC4xLDAuOSwwLjIsMS40LDAuMmMwLjItMC45LDAuMi0xLjUsMC4yLTEuNmMwLTAuNCwwLjQtMC43LDAuOC0wLjcNCgkJYzAuNCwwLDAuNywwLjMsMC43LDAuN2MwLDAuMSwwLDAuOC0wLjIsMS43QzQzLjIsMTMyLjMsNDQuMSwxMzIuMyw0NC44LDEzMi40Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZiIgZD0iTTQ5LDEyMy40Yy0wLjEtMi42LTAuNi01LTEuNS03LjNjLTEuMS0yLjgtNC43LTQuOC05LjUtNS45Yy04LjktMi0yMC41LDEuMy0yNy45LDcuNGMwLjMsMS4xLDAuMiwyLjUtMC4yLDMuNw0KCQljNS4zLDIuOCwxMy4xLDUuOSwyMC40LDguMWMxLjctMy45LDUtNC42LDcuNi00YzEuOCwwLjUsMywwLjcsMy45LDAuOWwxLDAuMmMxLjIsMC4zLDIuMywxLjEsMi45LDIuMmMwLjUsMC44LDAuOSwyLDAuNiwzLjcNCgkJYzAuOS0wLjEsMS4zLTAuMiwxLjQtMC4zQzQ4LjYsMTI5LjQsNDkuMSwxMjYuNSw0OSwxMjMuNCIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNmZmZmZmYiIGQ9Ik0zOS4xLDEzOC43Yy0yLTAuMi00LjctMC43LTUuOC0xLjFjLTEuMy0wLjQtMi41LTEuNS0zLjEtMi45Yy0wLjMtMC42LTAuNS0xLjMtMC41LTIuMmMwLTAuNSwwLTEuMSwwLjItMS44DQoJCWMtNy4zLTIuMi0xNS4xLTUuMy0yMC41LTguMWMtMC4yLDAuMy0wLjQsMC43LTAuNywwLjljLTAuNCwwLjUtMC45LDAuOC0xLjMsMWMwLjUsNC40LDIuMSw4LjgsNC42LDEyLjVjMy4zLDUsNy44LDguNCwxMi42LDkuNQ0KCQljMS43LDAuNCw0LDAuOSw2LDAuNGM3LjUtMS42LDEzLjUtNi43LDE2LjUtMTMuNGMtMC4zLDAuMS0wLjcsMC4xLTEuMiwwLjFDNDQuMSwxMzguNyw0MC42LDEzOC45LDM5LjEsMTM4LjciLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNNC40LDExOGMwLjItMC41LDAuNS0xLDAuOS0xLjVjMC4zLTAuMywwLjYtMC42LDAuOS0wLjhjMC45LTQsMi43LTcuNiw1LjQtMTAuM2MtNCwyLjgtNy4xLDYuOC04LjcsMTEuNA0KCQlDMy4yLDExNy4xLDMuOCwxMTcuNiw0LjQsMTE4Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZiIgZD0iTTQsMTE5LjRjLTAuNi0wLjQtMS4xLTAuOC0xLjQtMS4xYy0wLjYsMi4yLTAuOSw0LjYtMC44LDdjMCwwLjUsMC4xLDEsMC4xLDEuNWMwLjQtMS40LDEuMS0yLjksMi4xLTQuNQ0KCQlDMy43LDEyMS40LDMuNywxMjAuNCw0LDExOS40Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I2ZmZmZmZiIgZD0iTTUuOSwxMjQuN2MtMC41LTAuMS0xLTAuNC0xLjMtMC45Yy0xLjgsMi43LTIuNSw1LjEtMS45LDcuMmMyLjcsOSwxMC44LDE1LjYsMjAuNCwxNi41DQoJCUMxMy45LDE0NC44LDcuMSwxMzUuMyw1LjksMTI0LjciLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojZmZmZmZmIiBkPSJNMzAuMSw4MWMwLTE3LjYtMjctMTcuMi0yNy0zOS41YzAtMTMuNCwxMi4xLTE2LjMsMTIuMS0yNi45YzAtMTAuMS05LjgtMTAuNC05LjgtMTAuNHMyLjUtMyw5LjctMw0KCQljNy4xLDAsMTEsMy43LDExLDEzLjRjMCwxNC41LTUuMiwyMS43LDUuOSwzMi43YzAuOCwwLjgsMy4xLDMuMSw2LjEsMy4xYzQuNSwwLDAuOC0xNS4xLDE5LjQtMjAuOWMwLDAsMS4xLDEuNywyLjEsNS40DQoJCWMtMS4xLDAuNS00LjMsMi4yLTQuMSwyLjljMC4yLDAuOCw0LjMtMC4xLDQuOC0wLjJjMC44LDMuNSwxLjUsOC4zLDEuNSwxNC40Yy0yMS43LDAtMjkuOSwyNi4zLTI1LDMxLjFjMCwwLTIuNCwzLjItNC40LDcuMQ0KCQljMCwwLDAuOCwwLjUsMi44LDAuNWMyLjEsMCw2LTEuMSw3LjUtMi42YzAuMy0wLjMsMC43LDAsMC40LDAuNEMzNy45LDk2LjEsMzAsOTAuNiwzMCw5Ny43YzAsMy44LDIuMSw0LjMsMy4zLDQuNw0KCQljNS4xLDEuOCw5LjMsNS4yLDEyLjEsOS43Yy0xLjktMS42LTQuMy0yLjctNy4yLTMuM2MtOS4xLTItMjEuMSwxLjItMjguOCw3LjVjLTAuNC0wLjUtMC45LTAuOC0xLjQtMC45Yy0wLjEsMC0wLjEsMC0wLjIsMA0KCQljMS00LjMsMy04LDUuNy0xMC41YzAuMS02LDUuMS0xLjcsMTEuMi03LjdDMjYuNyw5NS4zLDMwLjEsODguOSwzMC4xLDgxIE0xNy4yLDE0LjZjMCw2LjQtMi41LDcuMy0yLjUsMTEuMmMwLDYsOC4xLDYuOSw4LjEsNi45DQoJCWMtMC4xLTIuNiwwLjItNS4zLDAuNS04LjJjMC4zLTIuOSwwLjctNi4yLDAuNy05LjljMC0xMC00LjMtMTEuNC05LTExLjRjLTAuMywwLTAuNSwwLTAuNywwYzAsMCwwLjEsMiwxLjcsMg0KCQljMC43LDAsMC43LTAuMywxLjEtMC4zYzAuNCwwLDEuOCwxLjQsMS44LDMuNWMwLDIuNS0yLjEsMi43LTIuMSwyLjdDMTcuMSwxMi4xLDE3LjIsMTMuMywxNy4yLDE0LjYiLz4NCjwvZz4NCjwvc3ZnPg0K" alt="" />
+                    <h2>Tottenham Hotspur</h2>
+                    <p><a href="https://www.tottenhamhotspur.com/">&gt; Más información</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="https://www.realmadrid.com/StaticFiles/RealMadrid/directo/statics/primera/Rm_mediano.png" alt="" />
+                    <h2>Real Madrid</h2>
+                    <p><a href="https://www.realmadrid.com/en">&gt; Más información</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="data:image/png;base64,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" alt="" />
+                    <h2>Barcelona</h2>
+                    <p><a href="https://www.fcbarcelona.es/es/">&gt; Más información</a></p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo">Bodegones</h2>
+        <div class="row ej2">
+            <div class="col-xs-12 col-md-4">
+                <div class="bode">
+                    <img src="imagenes/Grid/bodegones/zurbaran1.jpg" alt="" />
+                    <p>Bodegón con limones, naranjas y rosas<br>
+                        Francisco de Zurbarán (1598-1664)<br>
+                        Lienzo, 60 x 107 cm. </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <div class="bode">
+                    <img src="imagenes/Grid/bodegones/zurbaran2.jpg" alt="" />
+                    <p>Bodegón con cacharros<br>
+                        Francisco de Zurbarán (1598-1664)<br>
+                        Lienzo, 46 × 84 cm. </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <div class="bode">
+                    <img src="imagenes/Grid/bodegones/zurbaran3.jpg" alt="" />
+                    <p>Agnus Dei o Carnero<br>
+                        Francisco de Zurbarán (1598-1664)<br>
+                        Lienzo, 37 x 62 cm. </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="news">Últimas noticias</h2>
+        <div class="row ej3">
+            <!-- ejemplo 6 elementos: xs-12 módulos sm-6 md-4 lg-2-->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Ingres</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Zurbaran</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Edvard Munch</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Van Gogh</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Picasso</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="noticia">
+                    <h3><a href="#">Lucian Freud</a></h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida malesuada suscipit.
+                        Vivamus molestie sollicitudin quam a posuere. Donec eu velit eros. Nullam quis sem pulvinar,
+                        aliquam dolor volutpat, malesuada risus. Proin ullamcorper et lorem nec...</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">| Ing. Henry Picado Solano | hpicado@uvirtual.ac.cr | (506) 8340-8807 |</div>
+    </div>
+    <!-- jQuery (es necesario para plugins JavaScript de Bootstrap  ) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
